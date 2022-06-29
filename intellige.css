@@ -1,0 +1,1349 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Anek Latin', sans-serif;
+}
+
+
+
+header 
+{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+
+header img 
+{
+    width: 50px;
+    padding: 10px;
+}
+
+
+
+
+header h1
+{
+    font-size: 1.4em;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+header .container {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 2.5px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+nav 
+{
+    flex: 1;
+    text-align: right;
+}
+
+
+
+nav ul li 
+{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+
+nav ul li a 
+{
+    font-size: 1em;
+    color: #000;
+}
+
+
+
+nav ul li a:hover
+{
+    color: rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+
+
+.intellige 
+{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+
+
+.intellige .row 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 25px;
+}
+
+
+
+
+
+
+
+.intellige .word1
+{
+    display: block;
+    margin-top: 0rem;
+}
+
+
+
+.intellige .word1 h1
+{
+    font-size: 4.6em;
+    color: #000;
+}
+
+
+
+
+.intellige .word1 h2
+{
+    font-size: 4em;
+    color: #000;
+}
+
+
+
+
+.intellige .word1 h3
+{
+    font-size: 3em;
+    color: #000;
+}
+
+
+
+.intellige .word1 h4
+{
+    font-size: 3.2em;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+.intellige .word1 a {
+    position: absolute;
+    padding: 15px 95px;
+    display: inline-block;
+    font-size: 1.7em;
+    background: #e79d18;
+    color: #000;
+    border-radius: 7px;
+    margin-top: 1.5rem;
+    box-shadow: 0 9px #000;
+}
+
+
+
+
+
+.intellige .word1 a:active
+{
+    box-shadow: 0 2px #000;
+  transform: translateY(4px);
+}
+
+
+
+.intellige .imge
+{
+    
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+.intellige .imge img 
+{
+    width: 500px;
+    padding-right: 0px;
+}
+
+
+
+
+
+
+/*********About**********/
+
+
+.about 
+{
+    width: 100%;
+    height: 850px;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+.about h1 
+{
+    position: absolute;
+    font-size: 3.5em;
+    color: #000;
+    padding: 20px;
+}
+
+
+
+.about .row2
+{
+    display: block;
+}
+
+
+
+
+.about .uls 
+{
+    display: block;
+}
+
+
+
+
+
+.about .uls ul 
+{
+    position: absolute;
+    font-size: 1.7em;
+    color: #27cb15;
+    margin-top: 4rem;
+    padding: 20px;
+}
+
+
+
+
+.about .uls ul li 
+{
+    font-size: 1.2em;
+    color: #777;
+}
+
+
+
+
+.about .imge2
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.about .imge2 img 
+{
+    width: 520px;
+    margin-top: 28rem;
+}
+
+
+
+
+
+
+
+/********Loader********/
+
+
+.loader 
+{
+    position: fixed;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.loader h1 
+{
+    position: absolute;
+    font-size: 3em;
+    color: #000;
+    margin-top: 25rem;
+}
+
+
+
+
+
+.loader .loadi {
+  width: 85px;
+  height: 85px;
+  border: 3px solid #999;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader .loadi::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  width: 28px;
+  height: 28px;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
+
+
+
+/********More********/
+
+
+.more 
+{
+    width: 100%;
+    height: 800px;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+
+.more h1
+{
+    position: absolute;
+    font-size: 3.2em;
+    color: #000;
+    padding: 25px;
+}
+
+
+
+.more p
+{
+    position: absolute;
+    font-size: 1.5em;
+    color: #777;
+    padding: 25px;
+    margin-top: 3.7rem;
+}
+
+
+
+
+
+
+.more form 
+{
+    position: absolute;
+    display: block;
+    padding: 20px;
+    margin-top: 8rem;
+}
+
+
+
+
+.more form input
+{
+    width: 280px;
+    height: 45px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 4px;
+    font-size: 1.2em;
+    margin: 0.4rem;
+    border: none;
+}
+
+
+
+
+
+.more .fil 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.more .fil img 
+{
+    width: 450px;
+    margin-top: 22rem;
+}
+
+
+
+
+
+
+
+/********Other********/
+
+
+.other 
+{
+    width: 100%;
+    height: 850px;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+
+.other h1
+{
+    position: absolute;
+    font-size: 3em;
+    color: #000;
+    padding: 25px;
+}
+
+
+
+
+.other h4
+{
+    position: absolute;
+    font-size: 1.4em;
+    color: #777;
+    padding: 25px;
+    margin-top: 3.5rem;
+}
+
+
+
+
+
+
+.other .box 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.other .box .bax 
+{
+    position: absolute;
+    width: 360px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    background: #999;
+    box-shadow: 5px 10px 18px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin-top: 10rem;
+}
+
+
+
+
+.other .box .bax h1 
+{
+    position: absolute;
+    font-size: 2em;
+    color: #000;
+    margin-top: 0.7rem;
+}
+
+
+
+
+.other .box .bax form 
+{
+    margin-top: 5.5rem;
+}
+
+
+
+
+.other .box .bax form label 
+{
+    font-size: 1.7em;
+    color: #fff;
+}
+
+
+.other .box .bax form input
+{
+    width: 300px;
+    height: 48px;
+    border-radius: 5px;
+   background: rgba(255,255,255,0.4);
+    font-size: 1.2em;
+    color: #fff;
+    padding: 8px;
+    border: none;
+}
+
+
+
+
+.other .box .bax form p
+{
+    font-size: 1.4em;
+    color: #fff;
+    margin-top: 0.6rem;
+}
+
+
+
+.other .box .bax form .typ label
+{
+    font-size: 1.2em;
+    color: #000;
+}
+
+
+
+.other .box .bax form .typ input
+{
+   width: 17px;
+   height: 15px;
+}
+
+
+
+
+
+.other .box .bax form .button 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.other .box .bax form .button button
+{
+    display: inline-block;
+    padding: 14px 65px;
+    background: #fff;
+    color: #000;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 8px #000;
+}
+
+
+
+
+.other .box .bax form .button button:active
+{
+    box-shadow: 0 3px #000;
+    transform: translateY(4px);
+}
+
+
+
+
+
+.other .ha 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.other .ha h5 
+{
+    position: absolute;
+    font-size: 1.1em;
+    color: #000;
+    margin-top: 50rem;
+}
+
+
+
+
+
+
+/**********Scan**********/
+
+
+.scan 
+{
+    position: fixed;
+    width: 100%;
+    height: 770px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+.scan #qr-reader
+{
+    color: #444;
+}
+
+
+
+
+.scan h1 
+{
+    position: absolute;
+    font-size: 2.8em;
+    color: #555;
+    margin-top: 18rem;
+}
+
+
+
+.scan .imga 
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.scan .imga img 
+{
+    width: 385px;
+    margin-top: 24rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 970px) {
+
+
+nav ul 
+{
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    top: 50px;
+    backdrop-filter: blur(25px);
+    right: 0px;
+}
+
+
+
+nav ul li 
+{
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+
+nav ul li a 
+{
+    color: #000;
+    margin: 0.5rem;
+}
+
+
+
+nav ul li a:hover 
+{
+    color: rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+
+
+header .container {
+  display: block;
+  margin-right: 5px;
+}
+
+
+
+#menuList
+{
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+
+.intellige 
+{
+    width: 100%;
+    height: 800px;
+    display: block;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+
+.intellige .row 
+{
+   
+    flex-direction: column-reverse;
+    padding: 140px 15px;
+}
+
+
+
+.intellige .imge
+{
+     display: flex;
+     justify-content: center;
+}
+
+
+
+
+.intellige .imge img 
+{
+    width: 280px;
+    padding-right: 0px;
+}
+
+
+
+.intellige .word1
+{
+    display: block;
+    margin-top: 6rem;
+}
+
+
+
+.intellige .word1 h1
+{
+    font-size: 2.8em;
+    color: #000;
+}
+
+
+
+
+.intellige .word1 h2
+{
+    font-size: 1.8em;
+    color: #000;
+}
+
+
+
+
+.intellige .word1 h3
+{
+    font-size: 2.2em;
+    color: #000;
+}
+
+
+
+.intellige .word1 h4
+{
+    font-size: 2.5em;
+    color: #000;
+}
+
+
+
+
+
+
+.intellige .word1 a {
+    position: absolute;
+    padding: 12px 65px;
+    display: inline-block;
+    font-size: 1.2em;
+    background: #e79d18;
+    color: #000;
+    border-radius: 7px;
+    margin-top: 1.5rem;
+    box-shadow: 0 9px #000;
+}
+
+
+
+
+
+.intellige .word1 a:active
+{
+    box-shadow: 0 2px #000;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+/*********About**********/
+
+
+.about 
+{
+    width: 100%;
+    height: 800px;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+.about h1 
+{
+    position: absolute;
+    font-size: 2em;
+    color: #000;
+    padding: 15px;
+}
+
+
+
+.about .row2
+{
+    display: block;
+}
+
+
+
+.about .uls 
+{
+    display: block;
+}
+
+
+
+.about .uls ul 
+{
+    position: absolute;
+    font-size: 1.5em;
+    color: #27cb15;
+    margin-top: 4rem;
+    padding: 15px;
+}
+
+
+
+
+.about .uls ul li 
+{
+    font-size: 1em;
+    color: #777;
+}
+
+
+
+
+.about .imge2
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.about .imge2 img 
+{
+    width: 270px;
+    margin-top: 28rem;
+}
+
+
+
+
+
+
+
+/********Loader********/
+
+
+.loader 
+{
+    position: fixed;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.loader h1 
+{
+    position: absolute;
+    font-size: 2em;
+    color: #000;
+    margin-top: 23rem;
+}
+
+
+
+
+
+.loader .loadi {
+  width: 65px;
+  height: 65px;
+  border: 3px solid #999;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader .loadi::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  width: 22px;
+  height: 22px;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+/********More********/
+
+
+.more 
+{
+    width: 100%;
+    height: 600px;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+
+.more h1
+{
+    position: absolute;
+    font-size: 2.3em;
+    color: #000;
+    padding: 15px;
+}
+
+
+
+.more p
+{
+    position: absolute;
+    font-size: 1.3em;
+    color: #777;
+    padding: 15px;
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+.more form 
+{
+    position: absolute;
+    display: block;
+    padding: 20px;
+    margin-top: 8rem;
+}
+
+
+
+
+.more form input
+{
+    width: 200px;
+    height: 35px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 0.3rem;
+    border: none;
+}
+
+
+
+
+
+.more .fil 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.more .fil img 
+{
+    width: 250px;
+    margin-top: 20rem;
+}
+
+
+
+
+
+/********Other********/
+
+
+.other 
+{
+    width: 100%;
+    height: 800px;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+
+.other h1
+{
+    position: absolute;
+    font-size: 2em;
+    color: #000;
+    padding: 15px;
+}
+
+
+
+
+.other h4
+{
+    position: absolute;
+    font-size: 1em;
+    color: #777;
+    padding: 15px;
+    margin-top: 2.5rem;
+}
+
+
+
+
+
+
+.other .box 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.other .box .bax 
+{
+    position: absolute;
+    width: 310px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    background: #999;
+    box-shadow: 5px 10px 18px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin-top: 10rem;
+}
+
+
+
+
+.other .box .bax h1 
+{
+    position: absolute;
+    font-size: 1.7em;
+    color: #000;
+    margin-top: 0.5rem;
+}
+
+
+
+
+.other .box .bax form 
+{
+    margin-top: 4rem;
+}
+
+
+
+
+.other .box .bax form label 
+{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+
+.other .box .bax form input
+{
+    width: 270px;
+    height: 45px;
+    border-radius: 5px;
+   background: rgba(255,255,255,0.4);
+    font-size: 1.1em;
+    color: #fff;
+    padding: 8px;
+    border: none;
+}
+
+
+
+
+.other .box .bax form p
+{
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 0.6rem;
+}
+
+
+
+.other .box .bax form .typ label
+{
+    font-size: 1.2em;
+    color: #000;
+}
+
+
+
+.other .box .bax form .typ input
+{
+   width: 17px;
+   height: 15px;
+}
+
+
+
+
+
+.other .box .bax form .button 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.other .box .bax form .button button
+{
+    display: inline-block;
+    padding: 12px 45px;
+    background: #fff;
+    color: #000;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 8px #000;
+}
+
+
+
+
+.other .box .bax form .button button:active
+{
+    box-shadow: 0 3px #000;
+    transform: translateY(4px);
+}
+
+
+
+
+
+.other .ha 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.other .ha h5 
+{
+    position: absolute;
+    font-size: 1em;
+    color: #000;
+    margin-top: 48rem;
+}
+
+
+
+
+
+
+
+
+/**********Scan**********/
+
+
+.scan 
+{
+    position: fixed;
+    width: 100%;
+    height: 770px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+.scan #qr-reader
+{
+    color: #444;
+}
+
+
+
+
+.scan h1 
+{
+    position: absolute;
+    font-size: 1.8em;
+    color: #555;
+    margin-top: 18rem;
+}
+
+
+
+.scan .imga 
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.scan .imga img 
+{
+    width: 185px;
+    margin-top: 24rem;
+}
+
+
+
+
+
+
+
+
+
+
+} 

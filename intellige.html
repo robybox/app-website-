@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>roby_box 📦</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link rel="stylesheet" href="intellige.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header>
+        <img src="cube.png"> 
+        <h1>roby_box</h1>
+            <nav>
+                <ul id="menuList">
+               <li><a href="intellige.html">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="scan.html">Scane</a></li>
+               <li><a href="#">Platform</a></li>
+               <li><a href="#">Cube method</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">Privacy</a></li>
+                </ul>
+            </nav>
+            <label id="icon">
+ <div class="container" onclick="togglemenu()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</label>
+    </header>
+    
+    <script>
+    var menuList = document.getElementById("menuList");
+    
+    menuList.style.maxHeight = "0px";
+    
+    function togglemenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "700px";
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+    
+    <section class="intellige">
+        <div class="row">
+            <div class="word1">
+                <h1>Use this app</h1>
+                <h2>To scan and create element</h2>
+                <h3>Save from boxes 📦</h3>
+                <h4>and download...</h4>
+<a href="#">Know more</a>
+            </div>
+            
+            <div class="imge">
+                <img src="bg.svg">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="about">
+        <h1>How to use this app</h1>
+        <div class="row">
+            <div class="uls">
+        <ul>Methods to use and download:
+            <li>1.This app is for get element with nucleons.</li>
+            <li>2.After scanning app will be show 3d view</li>
+            <li>3.It will give how many meters and quality</li>
+            <li>4.Our app has cool design making</li>
+            <li>5.This app actually for all devices: iOs, android, windows, linux, MacOS</li>
+        </ul>
+        </div>
+        
+        <div class="imge2">
+            <img src="about.svg">
+        </div>
+        </div>
+    </section>
+    
+    
+    
+    <section class="more">
+        <h1>Upload your files</h1>
+        <p>This method helps to do effective your files</p>
+        
+        <form action="demo.php" method="POST" enctype="multipart/form-data"> 
+ <input type="file" name="fuResume" id="fuResume">
+ <br>
+ <input type="submit" value="Upload file">
+        </form>
+        
+        <div class="fil">
+            <img src="files.svg">
+        </div>
+    </section>
+    
+    
+    
+    <section class="other">
+        <h1>Using types</h1>
+        <h4>Choose your app version and send data to get app</h4>
+        <div class="box">
+            <div class="bax">
+                <h1>Download</h1>
+                <form action="https://formspree.io/f/xayvzaay" method="POST">
+  <label for="fname" class="name">User name:</label><br>
+  <input type="text" id="fname" name="User name" placeholder="Write name..."><br>
+  <label for="lname" class="name">User email:</label><br>
+  <input type="email" id="lname" name="User email" placeholder="Email..."><br>
+  <p>Choose for which devices:</p>
+  <div class="typ">
+ <input type="radio" id="html" name="fav_language" value="IOS">
+ <label for="html">IOS</label><br>
+ <input type="radio" id="css" name="fav_language" value="android">
+ <label for="css">Android</label><br>
+ <input type="radio" id="javascript" name="fav_language" value="desktop">
+ <label for="javascript">Desktop etc</label>
+ </div>
+ <br>
+ <div class="button">
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form> 
+            </div>
+        </div>
+        <div class="ha">
+        <h5>roby_box™</h5>
+        </div>
+    </section>
+    
+    
+    
+    <div class="loader">
+        <div class="loadi"></div>
+        <h1>roby_box</h1>
+    <script>
+            $(window).on("load",function(){
+                $(".loader").fadeOut("show")
+            });
+        </script>

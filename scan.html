@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<meta meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>roby_box 📦</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link rel="stylesheet" href="intellige.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+</head> 
+<body>
+    <section class="scan">
+        <div id="qr-reader" style="width: 100%"></div>
+<script>
+    function onScanSuccess(decodedText, decodedResult) {
+    console.log(`Code scanned = ${decodedText}`, decodedResult);
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+	"qr-reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess);
+</script>
+
+<h1>Scanning...</h1>
+<div class="imga">
+<img src="scan.svg">
+</div>
+    </section>
